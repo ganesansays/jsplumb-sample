@@ -1,22 +1,24 @@
-<div class="text-center title">
-  <hello name="{{ title }}"></hello>
-</div>
-
 <div class="container">
-  <span class="btn btn-primary" (click)="showConnectOnClick()">{{buttonName}}</span>
-  <div class="row">
-    <div class="col-md-12">
-      <div class="alignleft">
-        <div class="customBox" id="Source">
-          Source
+  <!--<span class="btn btn-primary" (click)="showConnectOnClick()">{{buttonName}}</span>-->
+  <div data-demo-id="flowchart">
+    <div class="jtk-demo-main">
+  <!-- demo -->
+        <div class="jtk-demo-canvas canvas-wide flowchart-demo jtk-surface jtk-surface-nopan" id="canvas">
+            <div class="window jtk-node" id="flowchartWindow1"><strong>1</strong><br/><br/></div>
+            <div class="window jtk-node" id="flowchartWindow2"><strong>2</strong><br/><br/></div>
+            <div class="window jtk-node" id="flowchartWindow3"><strong>3</strong><br/><br/></div>
+            <div class="window jtk-node" id="flowchartWindow4"><strong>4</strong><br/><br/></div>
         </div>
-      </div>
-      <div class="alignright">
-        <div class="customBox" id="Target1">
-          Target 1
-        </div>
-      </div>
-      <div style="clear: both;"></div>
+        <!-- /demo -->
+        <!-- explanation -->
+        <!--<div class="description">
+            <h4>FLOWCHART</h4>
+            <p>Nodes are connected with the Flowchart connector.</p>
+            <p>Hover over connections to highlight them, click to delete. </p>
+            <p>Drag new connections from hollow dots to solid dots. You can also drag connections from their source/target to other sources/targets, or back onto themselves.</p>
+            <p>By default, Flowchart connectors have square corners, but by setting the 'cornerRadius' parameter, as we have here, you can get rounded corners.</p>
+        </div>-->
+        <!-- /explanation -->
     </div>
   </div>
 </div>
